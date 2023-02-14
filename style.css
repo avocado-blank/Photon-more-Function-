@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+header h2 {
+    padding: 2rem;
+    font-size: 2rem;
+}
+
+#logo {
+    color: black;
+    text-decoration: none;
+}
+
+.search-form {
+    display: flex;
+    padding: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-form input {
+    border: none;
+    border: 2px solid blueviolet;
+    font-size: 1rem;
+    padding: 0.5rem;
+    width: 50%;
+}
+
+.search-form .submit-btn {
+    border: none;
+    background: blueviolet;
+    color: white;
+    padding: 0.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.clear-input {
+    border: none;
+    background: white;
+    color: black;
+    padding: 0.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border: 1px ridge blueviolet;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.clear-input:hover {
+    background: black;
+    color: white;
+}
+
+.gallery-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: gray;
+    padding: 0.5rem 0;
+}
+
+.gallery-info a {
+    text-decoration: none;
+    color: gray;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    padding: 2rem 0rem;
+    width: 80%;
+    margin: auto;
+    row-gap: 5rem;
+    column-gap: 3rem;
+}
+
+.gallery img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.nav-button {
+    min-height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.more {
+    padding: 1rem 1.5rem;
+    background: blueviolet;
+    color: white;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+}
+
+.download {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    color: gray;
+}
+
+.single-div {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: space-around;
+    /* height: 100vh; */
+}
+
+.single-div img {
+    padding: 0.5rem;
+    width: 25%;
+    height: 25%;
+    border-radius: 10%;
+}
+
+.back-btn {
+    background: transparent;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
